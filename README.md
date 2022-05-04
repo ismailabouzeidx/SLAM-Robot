@@ -27,4 +27,4 @@ Trying to Traverse Closed off locations due to faulty map
 
 <img src="errorfromincompletemap.png" width="1080"/>
 
-Another Problem was that the robot would be "lost" when rotating; this with fixed upon tuning the odom_alpha AMCL parameters.
+Another Problem was that the robot would be "lost" when rotating; this was fixed upon tuning the odom_alpha AMCL parameters.
