@@ -2,4 +2,4 @@
 This Robot does the simple task of traversing a known map after localizing itself in it. 
 
 
-<img src="relative/path/in/repository/to/image.svg" width="128"/>
+<img src="birdeye.png" width="128"/>
