@@ -1,0 +1,14 @@
+<launch>
+  <param command="$(find xacro)/xacro $(find moodz_description)/urdf/moodz.xacro" name="robot_description"/>
+  <node args="-param robot_description -urdf -model moodz" name="spawn_urdf" pkg="gazebo_ros" type="spawn_model"/>
+  <include file="$(find gazebo_ros)/launch/empty_world.launch">
+    <arg name="paused" value="false"/>
+    <arg name="use_sim_time" value="true"/>
+    <arg name="gui" value="true"/>
+    <arg name="headless" value="false"/>
+    <arg name="debug" value="false"/>
+  </include>
+  <node pkg="tf" type="static_transform_publisher" name="tf" args="0 0 0 -1.58 0 -1.58  base_link camera_1 100"/>
+  <node name="robot_state_publsher" pkg="robot_state_publisher" type="robot_state_publisher" />
+  <node name="joint_state_publsiher" pkg="joint_state_publisher" type="joint_state_publisher" />
+</launch>
