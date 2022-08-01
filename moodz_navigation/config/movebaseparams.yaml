@@ -4,7 +4,7 @@ recovery_behaviour_enabled: true
 NavfnROS:
   allow_unknown: true
   default_tolerance: 0.1
-TrajectoryPlannerROS:
+DWAPlannerROS:
     # Robot Configuration Parameters
     acc_lim_x: 0.1
     acc_lim_theta:  0.1
